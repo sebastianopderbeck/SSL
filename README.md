@@ -7,5 +7,3 @@
 > Legajo: 173.277-8
 > 
 > Nombre: Sebastian Opderbeck
-> 
-> Compilador usado: C11
