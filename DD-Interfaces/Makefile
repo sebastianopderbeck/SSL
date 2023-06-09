@@ -1,11 +1,14 @@
 main: Conversion.o
-	gcc main.c Conversion.o - o main
+	gcc ConversionMain.c Conversion.o -o ConversionMain
+	./ConversionMain
 
 Conversion.o: Conversion.c
+	rm -f ./Conversion.o
 	gcc -c Conversion.c -o Conversion.o
 
 conversionTest: Conversion.o
+	rm -f ./ConversionTest
 	gcc ConversionTest.c Conversion.o -o ConversionTest
 
-tests: conversionTest
+test: conversionTest
 	./ConversionTest

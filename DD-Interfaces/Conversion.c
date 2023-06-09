@@ -31,17 +31,3 @@ void conversionTable(int lower, int upper, int step, int isFahrenheitToCelsius) 
         printf(" %.2f \t\t\t %.2f\n", degreeToConvert, conversionDegree);
     }
 }
-
-int main() {
-    int lower, upper, step;
-
-    askValues(&lower, &upper, &step);
-    headerTable("Fahrenheit", "Celsius");
-    conversionTable(lower, upper, step, 1);
-
-    //askValues(&lower, &upper, &step);
-    headerTable("Celsius", "Fahrenheit");
-    conversionTable(lower, upper, step, 0);
-
-    return 0;
-}
